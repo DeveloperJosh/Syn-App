@@ -8,14 +8,17 @@ function newpage() {
   //// add now loading spinner then load new page
   const element = document.getElementById('root');
   const root = createRoot(element!);
-  root.render(
+  root.render(<>
     <div className="container mx-auto px-4 py-52">
-    <div className="flex flex-col items-center">
-      <button onClick={render} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Go Home
-      </button>
-    </div>
-  </div>
+      <div className="flex flex-col items-center">
+        <h1 className="text-white text-3xl font-bold">Not Done Yet</h1>
+        <br />
+        <button onClick={render} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Go Back
+        </button>
+        </div>
+      </div>
+    </>
   );
 }
 
